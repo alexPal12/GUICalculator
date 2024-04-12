@@ -1,0 +1,84 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="InClassCalculator.MainWindow"
+        Title="OOPCalculator"
+		Height="500" Width="500">
+	<StackPanel HorizontalAlignment="Center" Margin="20">
+		<StackPanel>
+			<TextBox x:Name="TextBox1" Height="100" Width="400"
+					 TextWrapping="Wrap"
+					 HorizontalContentAlignment="Right"
+					 TextAlignment="Right"/>
+		</StackPanel>
+		<Grid ColumnDefinitions ="100,100,100,100"
+			  RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+			  Margin="40">
+			<!-- 0th Row -->
+			<Button x:Name="ButtonAC" Width="43"
+					Height="27" Click="ACClickHandler" Grid.Row="0"
+					Grid.Column="0">AC</Button>
+			<Button x:Name="ButtonPLM" Width="43"
+					Height="27" Click="PLMClickHandler" Grid.Row="0"
+					Grid.Column="1">+/-</Button>
+			<Button x:Name="ButtonMod" Width="43"
+					Height="27" Click="ModClickHandler" Grid.Row="0"
+					Grid.Column="2">%</Button>
+			<Button x:Name="ButtonDiv" Width="43"
+					Height="27" Click="DivClickHandler" Grid.Row="0"
+					Grid.Column="3">/</Button>
+			<!-- 1st Row -->
+			<Button x:Name="Button1" Width="43"
+					Height="27" Click="Button1ClickHandler" Grid.Row="1"
+					Grid.Column="0">1</Button>
+			<Button x:Name="Button2" Width="43"
+					Height="27" Click="Button2ClickHandler" Grid.Row="1"
+					Grid.Column="1">2</Button>
+			<Button x:Name="Button3" Width="43"
+					Height="27" Click="Button3ClickHandler" Grid.Row="1"
+					Grid.Column="2">3</Button>
+			<Button x:Name="ButtonPlus" Width="43"
+					Height="27" Click="PlusClickHandler" Grid.Row="1"
+					Grid.Column="3">+</Button>
+			<!-- 2nd Row -->
+			<Button x:Name="Button4" Width="43"
+					Height="27" Click="Button4ClickHandler" Grid.Row="2"
+					Grid.Column="0">4</Button>
+			<Button x:Name="Button5" Width="43"
+					Height="27" Click="Button5ClickHandler" Grid.Row="2"
+					Grid.Column="1">5</Button>
+			<Button x:Name="Button6" Width="43"
+					Height="27" Click="Button6ClickHandler" Grid.Row="2"
+					Grid.Column="2">6</Button>
+			<Button x:Name="ButtonMinus" Width="43"
+					Height="27" Click="MinusClickHandler" Grid.Row="2"
+					Grid.Column="3">-</Button>
+			<!-- 3rd Row -->
+			<Button x:Name="Button7" Width="43"
+					Height="27" Click="Button7ClickHandler" Grid.Row="3"
+					Grid.Column="0">7</Button>
+			<Button x:Name="Button8" Width="43"
+					Height="27" Click="Button8ClickHandler" Grid.Row="3"
+					Grid.Column="1">8</Button>
+			<Button x:Name="Button9" Width="43"
+					Height="27" Click="Button9ClickHandler" Grid.Row="3"
+					Grid.Column="2">9</Button>
+			<Button x:Name="ButtonMulti" Width="43"
+					Height="27" Click="MultiClickHandler" Grid.Row="3"
+					Grid.Column="3">*</Button>
+			<!-- 4th Row -->
+			<Button x:Name="Button0" Width="143"
+					Height="27" Click="Button0ClickHandler" Grid.Row="4"
+					Grid.Column="0" Grid.RowSpan="2"
+					HorizontalContentAlignment="Center">0</Button>
+			<Button x:Name="ButtonPrd" Width="43"
+					Height="27" Click="DecimalClickHandler" Grid.Row="4"
+					Grid.Column="2" Grid.RowSpan="1">.</Button>
+			<Button x:Name="ButtonEqls" Width="43"
+					Height="27" Click="EqualsClickHandler" Grid.Row="4"
+					Grid.Column="3" Grid.RowSpan="1">=</Button>
+		</Grid>
+	</StackPanel>
+</Window>
